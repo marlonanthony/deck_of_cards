@@ -5,9 +5,7 @@ class Deck {
       this.shuffle()
   }
 
-  reset() {
-      this.deck = []
-      
+  reset = () => {
       const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds']
       const values = ['Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King']
       
@@ -18,7 +16,7 @@ class Deck {
       }
   }
 
-  shuffle() {
+  shuffle = () => {
       const { deck } = this
       let m = deck.length, i 
 
